@@ -5,21 +5,21 @@
 <hibernate-configuration>
     <session-factory name="session">
         
-        <!-- CONFIGURAÃ‡Ã•ES DE CONEXÃƒO COM O BD -->        
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property><!-- Defino o driver de conexÃ£o com o bd -->
+        <!-- CONFIGURAÇÕES DE CONEXÃO COM O BD -->        
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property><!-- Defino o driver de conexão com o bd -->
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sistemaweb?createDatabaseIfNotExist=true</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
         
-        <!-- HABILITA A EXIBIÃ‡ÃƒO DO SQL GERADO PELO HIBERNATE E FORMATA-O -->        
+        <!-- HABILITA A EXIBIÇÃO DO SQL GERADO PELO HIBERNATE E FORMATA-O -->        
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         
-        <!-- HABILITA A ATUALIZAÃ‡ÃƒO AUTOMÃTICA DA ESTRUTURA DE TABELAS PELO HIBERNATE -->       
+        <!-- HABILITA A ATUALIZAÇÃO AUTOMÁTICA DA ESTRUTURA DE TABELAS PELO HIBERNATE -->       
         <property name="hibernate.hbm2ddl.auto">update</property>
         
-        <!-- CONFIGURAÃ‡Ã•ES DO POOL DE CONEXÃ•ES-->       
+        <!-- CONFIGURAÇÕES DO POOL DE CONEXÕES-->       
         <property name="c3p0.min_size">1</property>
         <property name="c3p0.max_size">20</property>
         <property name="c3p0.timeout">300</property>
